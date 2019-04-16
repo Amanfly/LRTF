@@ -13,29 +13,29 @@ int main()
 	int t_time[5]={0,0,0,0,0};
 	int time=0,j=0,max=0,k;
 	int avg_w,avg_t;
-	cout<<"\nTotal Number Of Students :"<<n;
+	printf("\nTotal Number Of Students : %d",n);
 	sleep(1.0);
 	for(i=0;i<n;i++)
 	{
-		cout<<"\n\nId of the Students"<<p[i]<<id[i];
-		cout<<"\nTime Taken By The Student:"<<brust[i];;
+		printf("\n\nId of the Students%c    :%d",p[i],id[i]);
+		printf("\nTime Taken By The Student: %d",brust[i]);
 		sleep(1.0);
 		
 	}
 	sleep(1.0);
-	cout<<"\n\n | Student   |    Id      | Time Taken |";
+	printf("\n\n | Student   |    Id      | Time Taken |");
 	for(i=0;i<n;i++)
 	{
-		cout<<"\n |    %c\t     |   %d\t  |    %d       |"<<p[i]<<id[i]<<brust[i];
+		printf("\n |    %c\t     |   %d\t  |    %d       |",p[i],id[i],brust[i]);
 		time=time+brust[i];
 		t_time[i]=t_time[i]+brust[i];
 		brust1[i]=brust[i];
 	}
-	cout<<"\n\n---------------------------------------------------------------------------";
-	cout<<"\n\n\n<<<<<<<<<<<<<< Calculating Waiting Time For Each Student  >>>>>>>>>>>>>>>>>>>";
+	printf("\n\n---------------------------------------------------------------------------");
+	printf("\n\n\n<<<<<<<<<<<<<< Calculating Waiting Time For Each Student  >>>>>>>>>>>>>>>>>>>");
 	sleep(3);
-	cout<<"\n\nExecution of Process On Each Minutes-->>";
-	cout<<"\nGannt Chart: ";
+	printf("\n\nExecution of Process On Each Minutes-->>");
+	printf("\nGannt Chart: ");
 	max=2;
 	for(i=0;i<time;i++)
 	{
@@ -69,23 +69,24 @@ int main()
 				}
 			}
 		}
-		cout<<"%c-->"<<p[max];
+		printf("%c-->",p[max]);
 	}
-	cout<<"\n\n  Student       Id       Time Taken       Waiting      Turnarround";
+	printf("n\n  Student       Id       Time Taken       Waiting      Turnarround");
 	for(i=0;i<n;i++)
 	{
-		cout<<"\n     %c\t       %d\t       %d       \t    %d         \t %d "<<p[i]<<id[i]<<brust1[i]<<w_time[i],t_time[i];
+		printf("\n     %c\t       %d\t       %d       \t    %d         \t %d ",p[i],id[i],brust1[i],w_time[i],t_time[i]);
 		
 	}
-	cout<<"\n----------------------------------------------------------------------------";
+	printf("\n----------------------------------------------------------------------------");
 	for(i=0;i<n;i++)
 	{
 		avg_w+=w_time[i];
 		avg_t+=t_time[i];
 	}
-	cout<<"\n\nAverage Waiting Time    : %d"<<avg_w/n;
-	cout<<"\nAverage Turnarround Time: %d"<<avg_t/n;
-	cout<<"\n\n----------------------------------------------------------------------------\n\n\n";
+	printf("\n\nAverage Waiting Time    : %d",avg_w/n);
+	printf("\nAverage Turnarround Time: %d",avg_t/n);
+	printf("\n\n----------------------------------------------------------------------------\n\n\n");
 
 
 }
+
