@@ -4,6 +4,7 @@ int main()
 {
 	int n=3;
 	int i;
+	int z;
 	int brust[3]={2,4,8},id[3]={2132,2102,2453};
 	char p[3]={'a','b','c'};
 	int brust1[3];
@@ -78,9 +79,11 @@ int main()
 	printf("\n----------------------------------------------------------------------------");
 	for(i=0;i<n;i++)
 	{
-		avg_w+=w_time[i];
+	        
 		avg_t+=t_time[i];
+		z+=brust1[i]
 	}
+	avg_w=avg_t-z;
 	printf("\n\nAverage Waiting Time    : %d",avg_w/n);
 	printf("\nAverage Turnarround Time: %d",avg_t/n);
 	printf("\n\n----------------------------------------------------------------------------\n\n\n");
