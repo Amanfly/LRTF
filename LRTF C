@@ -1,16 +1,14 @@
-#include<iostream>
-#include<conio.h>
+#include<stdio.h>
 #include<unistd.h>
-using namespace std;
 int main()
 {
 	int n=3;
 	int i;
-	int brust[5]={2,4,8},id[5]={2132,2102,2453},priority[5];
-	char p[5]={'a','b','c'};
-	int brust1[5];
-	int w_time[5]={0,0,0,0,0};
-	int t_time[5]={0,0,0,0,0};
+	int brust[3]={2,4,8},id[3]={2132,2102,2453};
+	char p[3]={'a','b','c'};
+	int brust1[3];
+	int w_time[3]={0,0,0};
+	int t_time[3]={0,0,0};
 	int time=0,j=0,max=0,k;
 	int avg_w,avg_t;
 	printf("\nTotal Number Of Students : %d",n);
